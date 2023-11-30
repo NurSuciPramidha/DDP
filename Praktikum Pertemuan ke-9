@@ -1,0 +1,61 @@
+hasil_akhir = [
+    {'nama':'Reza', 'nilai':70},
+    {'nama':'Ciut', 'nilai':63},
+    {'nama':'Dian', 'nilai':80},
+    {'nama':'Badu', 'nilai':40}
+]
+
+def predikatlulus(data):
+  lulus = [mahasiswa['nama']
+     for mahasiswa in data
+     if mahasiswa ['nilai'] > 65]
+  return lulus
+
+hasil = predikatlulus (hasil_akhir)
+print('Siswa yang lulus :', hasil)
+
+ar_buah = ['pepaya', 'mangga', 'pisang', 'durian', 'jambu']
+
+def list_buah(buah):
+  list_terbalik = []
+  # Fungsi len digunakan untuk mengidentifikasi dan mengetahui seberapa panjang jumlah item atau anggota pada suatu objek.
+
+  for i in range(len(buah) -1,-1,-1):
+        list_terbalik.append(buah[i])
+        # Menambahkan elemen ke list
+
+  return list_terbalik
+
+# Memanggil fungsi list buah untuk mendapatkan urutan terbalik
+hasilnya = list_buah(ar_buah)
+print('urutan sudah dibalik menjadi', hasilnya)
+
+
+ar_buah = ['pepaya', 'mangga', 'pisang', 'durian', 'jambu']
+
+def duplikat(buah):
+    duplikat_buah = []
+
+    for buah in ar_buah:
+      # Menambah list pertama
+      duplikat_buah.append(buah)
+      # Menambah list kedua atau terakhir
+      duplikat_buah.append(buah)
+    return duplikat_buah
+
+# Memanggil fungsi duplikat
+hasilnya = duplikat(ar_buah)
+print('Hasil duplikatnya adalah', hasilnya)
+
+
+def konsonan(kalimat):
+  huruf = ''
+  for i in kalimat:
+     if i not in 'aiueo':
+    # Menambahkan konsonan ke string kosong
+        huruf += i
+  return huruf
+
+# Memanggil fungsi konsonan dengan string Nurul Fikri
+hasilnya = konsonan('Nurul Fikri')
+print('Huruf konsonan dalam kalimat Nurul Fikri adalah', hasilnya)
