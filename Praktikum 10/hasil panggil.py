@@ -1,0 +1,21 @@
+from bangun_datar import *
+persegi (12)
+lingkaran (35)
+persegipanjang (15, 30)
+lingkaran (37)
+segitiga (9, 14, 8)
+jajargenjang (2, 4, 9)
+layanglayang (46, 12, 8, 4)
+belahketupat (23, 34, 3)
+
+from perhitungan import *
+tambah (4, 4)
+kurang (45,18)
+kali (30, 30)
+bagi (100, 5)
+pangkat (50, 3)
+log (180)
+akar (9)
+sin (30)
+cos (360)
+tan (45)
